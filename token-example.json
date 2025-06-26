@@ -1,0 +1,27 @@
+{
+    "uid": "XXX",
+    "email": "XXX",
+    "emailVerified": true,
+    "displayName": "Venki",
+    "isAnonymous": false,
+    "photoURL": "XXX",
+    "providerData": [
+        {
+            "providerId": "XXX",
+            "uid": "XXX",
+            "displayName": "XXX",
+            "email": "XXX",
+            "phoneNumber": null,
+            "photoURL": "XXX"
+        }
+    ],
+    "stsTokenManager": {
+        "refreshToken": "XXX",
+        "accessToken": "XXX",
+        "expirationTime": 1750967197467
+    },
+    "createdAt": "1723122977703",
+    "lastLoginAt": "1750959231502",
+    "apiKey": "XXX",
+    "appName": "[DEFAULT]"
+}
