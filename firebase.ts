@@ -1,12 +1,23 @@
 import { Buffer } from "buffer";
 import { writeFileSync, mkdirSync, existsSync, readFileSync } from "fs";
 
-// TODO: Get your own token by running the following command in the Developer Console
-// On a firestore supporting app, in Chrome or Edge/
-// (async()=>{copy((await new Promise(r=>{const o=indexedDB.open('firebaseLocalStorageDb');o.onsuccess=()=>o.result.transaction('firebaseLocalStorage').objectStore('firebaseLocalStorage').getAll().onsuccess=e=>r(e.target.result)})).find(x=>x.fbase_key.startsWith('firebase:authUser:')).value);console.log('Firestore auth token copied to clipboard ✅')})();
-// Save the result to token.json
+// TODO: Replace these with the correct app-specific collections
+// See: https://venki.dev/notes/firebase-rev-eng
+const collections = [
+  "persons",
+  "meetingSummaries",
+  "transcripts",
+  "meetings",
+  "lifelogEntriesV2",
+  "dailyGems",
+  "meetingNotes",
+  "meetingPreps",
+  "meetingSummaries",
+  "lifelogChats",
+];
 
-const collections = ["persons", "meetingSummaries", "transcripts", "meetings"];
+// TODO: Replace this with the correct userId field used for gating
+// See: https://venki.dev/notes/firebase-rev-eng
 const userIdField = "firebaseUserId";
 
 // Load token from file
