@@ -12,6 +12,11 @@ This is a super simple script - I'd recommend reading it & modifying it as neces
 
 ## Setup
 
+0. Get `bun` if you don't have it:
+   ```
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
 1. Install dependencies:
    ```bash
    bun install
