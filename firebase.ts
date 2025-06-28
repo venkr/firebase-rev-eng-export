@@ -3,22 +3,11 @@ import { writeFileSync, mkdirSync, existsSync, readFileSync } from "fs";
 
 // TODO: Replace these with the correct app-specific collections
 // See: https://venki.dev/notes/firebase-rev-eng
-const collections = [
-  "persons",
-  "meetingSummaries",
-  "transcripts",
-  "meetings",
-  "lifelogEntriesV2",
-  "dailyGems",
-  "meetingNotes",
-  "meetingPreps",
-  "meetingSummaries",
-  "lifelogChats",
-];
+const collections = ["collection1", "collection2"];
 
 // TODO: Replace this with the correct userId field used for gating
 // See: https://venki.dev/notes/firebase-rev-eng
-const userIdField = "firebaseUserId";
+const userIdField = "userId";
 
 // Load token from file
 let token: any;
